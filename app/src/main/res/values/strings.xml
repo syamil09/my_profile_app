@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Profile</string>
+    <string name="keterangan1">pembuatan Desain Multi Window dan passing data antar activity</string>
+    <string name="keterangan2">pembuatan Desain dan Pengkodean Alur Program dalam sebuah Aplikasi Mobile</string>
+    <string name="keterangan3">Pembuatan aplikasi dengan menerapkan teknik pengolahan input user</string>
+    <string name="keterangan4">Pembuatan aplikasi mobile dengan teknik desain aplikasi lanjutan</string>
+    <string name="keterangan5">Pembuatan aplikasi mobile dengan menerapkan basis data SQLITE</string>
+    <string name="pelajaran">Target Project untuk semester ini:</string>
+    <string name="name">Syamil Imdad Mahasin</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="title_onboard">My Journey</string>
+    <string name="email">syamil2502@gmail.com</string>
+    <string name="date_of_birth">25-09-2002</string>
+    <string name="address">Pinang Ranti, East Jakarta</string>
+    <string name="phone">0813 1436 7063</string>
+</resources>
