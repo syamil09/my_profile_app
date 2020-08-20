@@ -4,28 +4,42 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private Button btnClose;
+    private Button btnClose, btnQuiz;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
         btnClose = (Button) findViewById(R.id.btn_close);
+        btnQuiz = (Button) findViewById(R.id.btn_quiz);
         btnClose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 showDialog();
+            }
+        });
+
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
             }
         });
     }
 
     public void closeApp(View view) {
         System.exit(0);
+    }
+
+    public void quiz() {
+
     }
 
     public void showDialog() {
@@ -43,9 +57,11 @@ public class ProfileActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
                         // close this activity
-                        // ProfileActivity.this.finish();
-
+//                         ProfileActivity.this.finish();
+                        finish();
                         // close app
+
+                        moveTaskToBack(true);
                         System.exit(0);
                     }
                 })

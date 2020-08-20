@@ -12,69 +12,28 @@
 
 
         <TextView
-            android:id="@+id/lblName"
+            android:id="@+id/lblUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Masukkan Nama mu"
             android:textSize="22dp"
             android:textColor="@color/black"/>
 
         <EditText
-            android:id="@+id/txtName"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Name" />
-
-        <TextView
-            android:id="@+id/lblPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Password"
-            android:textSize="22dp"
-            android:textColor="@color/black"
-            android:layout_marginTop="30dp"/>
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Password"/>
+            android:hint="Nama" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Mulai Quiz"
             android:background="@drawable/btn_rounded"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"/>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
 
 </LinearLayout>

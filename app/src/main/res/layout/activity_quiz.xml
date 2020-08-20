@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Siapakah presiden pertama Indonesia?"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp">
+
+        <RadioButton
+            android:id="@+id/choice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soekarno"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/choice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mohammad Hatta"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/choice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jokowi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/choice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BJ. Habibi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginBottom="10dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_rounded"/>
+
+    <Button
+        android:id="@+id/btn_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar Quiz"
+        android:background="@drawable/btn_rounded"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
