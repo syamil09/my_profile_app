@@ -9,5 +9,7 @@
     <color name="light_grey">#DFDEDE</color>
     <color name="black">#000000</color>
     <color name="green">#28E82B</color>
+    <color name="green_transparent">#7F28E82B</color>
     <color name="red">#F44336</color>
+    <color name="orange">#FF9E0F</color>
 </resources>
