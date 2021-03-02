@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/bg2"
+                android:background="@drawable/profile_bg2"
                 android:gravity="center_horizontal">
 
 
@@ -62,7 +62,7 @@
                     android:id="@+id/imageView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/photo"
+                    app:srcCompat="@drawable/profile_photo"
                     android:layout_marginBottom="14dp"
                     android:layout_marginTop="50dp"/>
 
@@ -113,7 +113,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@mipmap/mail" />
+                        android:src="@mipmap/profile_mail" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@mipmap/phone" />
+                        android:src="@mipmap/profile_phone" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -181,7 +181,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@mipmap/address" />
+                        android:src="@mipmap/profile_address" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -216,7 +216,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@mipmap/date" />
+                        android:src="@mipmap/profile_date" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -262,6 +262,7 @@
                     android:layout_marginLeft="20dp"/>
 
                 <HorizontalScrollView
+                    android:scrollbars="none"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/section_bio">
@@ -275,7 +276,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="10dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
                             android:background="@color/light_grey">
 
                             <LinearLayout
@@ -303,7 +304,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="10dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
                             android:background="@color/light_grey">
 
                             <LinearLayout
@@ -331,7 +332,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="10dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
                             android:background="@color/light_grey">
 
                             <LinearLayout
@@ -359,7 +360,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="10dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
                             android:background="@color/light_grey">
 
                             <LinearLayout
@@ -387,7 +388,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="10dp"
-                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
                             android:background="@color/light_grey">
 
                             <LinearLayout
@@ -428,7 +429,7 @@
                     android:backgroundTint="@color/orange"
                     android:layout_height="wrap_content"
                     android:text="Calculator"
-                    android:background="@drawable/btn_rounded"
+                    android:background="@drawable/profile_btn_rounded"
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/black"/>
                 <Button
@@ -437,7 +438,7 @@
                     android:backgroundTint="@color/green"
                     android:layout_height="wrap_content"
                     android:text="Try Quiz"
-                    android:background="@drawable/btn_rounded"
+                    android:background="@drawable/profile_btn_rounded"
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/black"/>
                 <Button
@@ -445,7 +446,7 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="CLOSE"
-                    android:background="@drawable/btn_rounded"
+                    android:background="@drawable/profile_btn_rounded"
                     android:layout_marginBottom="10dp"
                     android:onClick="closeApp"
                     android:textColor="@color/black"/>

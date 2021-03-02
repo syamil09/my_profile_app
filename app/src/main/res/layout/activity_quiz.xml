@@ -90,14 +90,14 @@
         android:layout_height="wrap_content"
         android:text="Lanjut"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btn_rounded"/>
+        android:background="@drawable/profile_btn_rounded"/>
 
     <Button
         android:id="@+id/btn_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Keluar Quiz"
-        android:background="@drawable/btn_rounded"
+        android:background="@drawable/profile_btn_rounded"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/red"
         android:textColor="@color/white"/>

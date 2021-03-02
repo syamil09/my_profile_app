@@ -70,7 +70,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Selesai"
-            android:background="@drawable/btn_rounded"
+            android:background="@drawable/profile_btn_rounded"
             android:layout_marginBottom="20dp" />
 
         <Button
@@ -78,7 +78,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Coba Lagi"
-            android:background="@drawable/btn_rounded"
+            android:background="@drawable/profile_btn_rounded"
             android:backgroundTint="@color/green"
             android:layout_marginBottom="20dp"/>
 

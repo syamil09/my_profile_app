@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrudApi_MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/crud__api_textfield"
+            android:elevation="2dp"
+            android:hint="nama"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            tools:targetApi="lollipop"></EditText>
+
+        <EditText
+            android:id="@+id/etNohp"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/crud__api_textfield"
+            android:elevation="2dp"
+            android:hint="No HP"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            tools:targetApi="lollipop"></EditText>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/crud__api_textfield"
+            android:elevation="2dp"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            tools:targetApi="lollipop"></EditText>
+
+
+
+        <Spinner
+            android:id="@+id/spKomentar"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/crud__api_textfield"
+            android:entries="@array/teams" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/crud__api_textfield"
+            android:elevation="2dp"
+            android:hint="id"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:visibility="gone"
+            tools:targetApi="lollipop"></EditText>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/crud__api_button"
+            android:backgroundTint="#6200EE"
+            android:text="ADD"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"></Button>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#eee"
+                android:dividerHeight="1dp" />
+            
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

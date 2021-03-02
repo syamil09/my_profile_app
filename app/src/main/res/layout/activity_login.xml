@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Mulai Quiz"
-            android:background="@drawable/btn_rounded"
+            android:background="@drawable/profile_btn_rounded"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"/>
 
