@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tugaspb">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,7 +19,7 @@
         <activity
             android:name=".QuizActivity"
             android:noHistory="true" />
-        <activity android:name=".ProfileActivity" android:noHistory="true">
+        <activity android:name=".ProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +34,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
+        </activity>
+        <activity android:name=".CrudApi_MainActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:label="CRUD API"
+            android:theme="@style/AppTheme2">
+
         </activity>
     </application>
 

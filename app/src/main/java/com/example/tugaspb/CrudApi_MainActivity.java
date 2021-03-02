@@ -19,8 +19,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,7 +40,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
     Spinner spKomentar;
     Button btnSave;
     ListView listView;
-
+    ActionBar actionBar;
 
     int CODE_GET_REQUEST  = 1;
     int CODE_POST_REQUEST = 2;
@@ -47,7 +49,10 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
         setContentView(R.layout.crud__api_activity_main);
+
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         etId = (EditText)findViewById(R.id.etId);
@@ -287,7 +292,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
 
         //constructor to get the list
         public DatakuAdapter(List<CrudApi_Biodata> dataList) {
-            super(com.example.androidapi.CrudApi_MainActivity.this, R.layout.crud__api_layout_data_list, dataList );
+            super(com.example.tugaspb.CrudApi_MainActivity.this, R.layout.crud__api_layout_data_list, dataList );
             this.dataList = dataList;
         }
 
@@ -344,7 +349,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
                 public void onClick(View view) {
 
                     // we will display a confirmation dialog before deleting
-                    AlertDialog.Builder builder = new AlertDialog.Builder(com.example.androidapi.CrudApi_MainActivity.this);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(com.example.tugaspb.CrudApi_MainActivity.this);
 
                     builder.setTitle("Delete " + dataku.getNama())
                             .setMessage("Are you sure you want to delete it?")

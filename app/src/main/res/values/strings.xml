@@ -13,4 +13,10 @@
     <string name="date_of_birth">25-09-2002</string>
     <string name="address">Pinang Ranti, East Jakarta</string>
     <string name="phone">0813 1436 7063</string>
+    <array name="teams">
+        <item>Teman</item>
+        <item>Biasa Saja</item>
+        <item>Bagaimana Ya?</item>
+        <item>No Comment</item>
+    </array>
 </resources>

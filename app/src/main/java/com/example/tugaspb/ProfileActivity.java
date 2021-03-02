@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private Button btnClose, btnQuiz, btnCalculator;
+    private Button btnClose, btnQuiz, btnCalculator, btnCrudApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnClose = (Button) findViewById(R.id.btn_close);
         btnQuiz = (Button) findViewById(R.id.btn_quiz);
         btnCalculator = (Button) findViewById(R.id.btn_calculator);
+        btnCrudApi = findViewById(R.id.btn_crud_api);
 
         btnClose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -39,6 +40,14 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProfileActivity.this, CalculatorActivity.class));
+            }
+        });
+
+
+        btnCrudApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, CrudApi_MainActivity.class));
             }
         });
     }
