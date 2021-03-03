@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.quiz;
 
 public class QuestionBank {
 

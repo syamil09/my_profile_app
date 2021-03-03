@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.crudapi;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

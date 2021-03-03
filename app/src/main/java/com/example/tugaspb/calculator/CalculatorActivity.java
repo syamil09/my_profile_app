@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.tugaspb.databinding.ActivityCalculatorBindingImpl;
+import com.example.tugaspb.ProfileActivity;
+import com.example.tugaspb.R;
 
 import java.text.DecimalFormat;
 

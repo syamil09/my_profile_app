@@ -9,9 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.tugaspb.calculator.CalculatorActivity;
+import com.example.tugaspb.crudapi.CrudApi_MainActivity;
+import com.example.tugaspb.crudsqlite.CrudSqlite_MainActivity;
+import com.example.tugaspb.quiz.LoginActivity;
+
 public class ProfileActivity extends AppCompatActivity {
 
-    private Button btnClose, btnQuiz, btnCalculator, btnCrudApi;
+    private Button btnClose, btnQuiz, btnCalculator, btnCrudApi, btnCrudSqlite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,7 @@ public class ProfileActivity extends AppCompatActivity {
         btnQuiz = (Button) findViewById(R.id.btn_quiz);
         btnCalculator = (Button) findViewById(R.id.btn_calculator);
         btnCrudApi = findViewById(R.id.btn_crud_api);
+        btnCrudSqlite = findViewById(R.id.btn_crud_sqlite);
 
         btnClose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -35,19 +41,22 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
             }
         });
-
         btnCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProfileActivity.this, CalculatorActivity.class));
             }
         });
-
-
         btnCrudApi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProfileActivity.this, CrudApi_MainActivity.class));
+            }
+        });
+        btnCrudSqlite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, CrudSqlite_MainActivity.class));
             }
         });
     }

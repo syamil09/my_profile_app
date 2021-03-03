@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crudsqlite.CrudSqlite_DisplayContact">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/crud_sqlite__logo"
+                android:layout_marginBottom="15dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/btnChooseImg"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/crud_sqlite__button"
+                android:backgroundTint="#A6A3AC"
+                android:onClick="run"
+                android:text="Choose Image"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                >
+
+            </Button>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:hint="Name"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:inputType="text"
+                android:background="@drawable/textfield"
+                android:importantForAutofill="no" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:hint="Phone"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:inputType="number"
+                android:background="@drawable/textfield"
+                android:importantForAutofill="no" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextStreet"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:hint="@string/street"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:inputType="text"
+                android:background="@drawable/textfield"
+                android:importantForAutofill="no" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:hint="Email"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/textfield"
+                android:importantForAutofill="no" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:hint="@string/country"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:inputType="text"
+                android:background="@drawable/textfield"
+                android:importantForAutofill="no" tools:targetApi="lollipop">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:background="@drawable/crud_sqlite__button"
+                android:backgroundTint="#6200EE"
+                android:textColor="@android:color/white"
+                android:onClick="run"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

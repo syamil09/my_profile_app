@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.crudapi;
 
 public class CrudApi_Biodata {
     private int id;

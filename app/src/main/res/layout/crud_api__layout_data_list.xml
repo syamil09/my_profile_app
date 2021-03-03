@@ -13,7 +13,7 @@
         android:layout_height="20dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
-        android:src="@drawable/crud__api_celtic" />
+        android:src="@drawable/crud_api__celtic" />
 
     <TextView
         android:id="@+id/txtName"

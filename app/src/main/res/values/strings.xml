@@ -19,4 +19,10 @@
         <item>Bagaimana Ya?</item>
         <item>No Comment</item>
     </array>
+    <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="street">Street</string>
+    <string name="country">City/State/Zip</string>
+    <string name="save">Save Contact</string>
 </resources>

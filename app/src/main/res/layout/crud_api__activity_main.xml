@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrudApi_MainActivity">
+    tools:context=".crudapi.CrudApi_MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -20,7 +20,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:background="@drawable/crud__api_textfield"
+            android:background="@drawable/crud_api__textfield"
             android:elevation="2dp"
             android:hint="nama"
             android:importantForAutofill="no"
@@ -34,7 +34,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/crud__api_textfield"
+            android:background="@drawable/crud_api__textfield"
             android:elevation="2dp"
             android:hint="No HP"
             android:importantForAutofill="no"
@@ -48,7 +48,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/crud__api_textfield"
+            android:background="@drawable/crud_api__textfield"
             android:elevation="2dp"
             android:hint="Email"
             android:importantForAutofill="no"
@@ -64,7 +64,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/crud__api_textfield"
+            android:background="@drawable/crud_api__textfield"
             android:entries="@array/teams" />
 
         <EditText
@@ -73,7 +73,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/crud__api_textfield"
+            android:background="@drawable/crud_api__textfield"
             android:elevation="2dp"
             android:hint="id"
             android:importantForAutofill="no"
@@ -89,7 +89,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/crud__api_button"
+            android:background="@drawable/crud_api__button"
             android:backgroundTint="#6200EE"
             android:text="ADD"
             android:textAllCaps="false"

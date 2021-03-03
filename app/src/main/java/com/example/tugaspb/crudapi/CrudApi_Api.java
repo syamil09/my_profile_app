@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.crudapi;
 
 public class CrudApi_Api {
     public static final String ROOT_URL = "https://apippb.000webhostapp.com/api_ppb/Api.php?apicall=";

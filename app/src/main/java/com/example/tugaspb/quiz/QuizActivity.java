@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tugaspb.ProfileActivity;
+import com.example.tugaspb.R;
 
 public class QuizActivity extends AppCompatActivity {
 

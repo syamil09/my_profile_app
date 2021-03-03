@@ -1,4 +1,4 @@
-package com.example.tugaspb;
+package com.example.tugaspb.crudapi;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -22,6 +22,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.tugaspb.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -291,7 +293,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
 
         //constructor to get the list
         public DatakuAdapter(List<CrudApi_Biodata> dataList) {
-            super(com.example.tugaspb.CrudApi_MainActivity.this, R.layout.crud_api__layout_data_list, dataList );
+            super(CrudApi_MainActivity.this, R.layout.crud_api__layout_data_list, dataList );
             this.dataList = dataList;
         }
 
@@ -348,7 +350,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
                 public void onClick(View view) {
 
                     // we will display a confirmation dialog before deleting
-                    AlertDialog.Builder builder = new AlertDialog.Builder(com.example.tugaspb.CrudApi_MainActivity.this);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(CrudApi_MainActivity.this);
 
                     builder.setTitle("Delete " + dataku.getNama())
                             .setMessage("Are you sure you want to delete it?")

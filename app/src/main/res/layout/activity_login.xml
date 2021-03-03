@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     android:gravity="center_vertical"
-    tools:context=".LoginActivity">
+    tools:context=".quiz.LoginActivity">
 
 
         <TextView
