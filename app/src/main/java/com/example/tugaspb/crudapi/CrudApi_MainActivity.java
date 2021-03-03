@@ -22,7 +22,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -51,7 +50,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        setContentView(R.layout.crud__api_activity_main);
+        setContentView(R.layout.crud_api__activity_main);
 
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
@@ -292,7 +291,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
 
         //constructor to get the list
         public DatakuAdapter(List<CrudApi_Biodata> dataList) {
-            super(com.example.tugaspb.CrudApi_MainActivity.this, R.layout.crud__api_layout_data_list, dataList );
+            super(com.example.tugaspb.CrudApi_MainActivity.this, R.layout.crud_api__layout_data_list, dataList );
             this.dataList = dataList;
         }
 
@@ -301,7 +300,7 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = getLayoutInflater();
-            View listViewItem = inflater.inflate(R.layout.crud__api_layout_data_list, null, true);
+            View listViewItem = inflater.inflate(R.layout.crud_api__layout_data_list, null, true);
 
             //getting the textview for displaying name
             TextView textViewName = listViewItem.findViewById(R.id.txtName);
@@ -315,13 +314,13 @@ public class CrudApi_MainActivity extends AppCompatActivity implements View.OnCl
 
             textViewName.setText(dataku.getNama());
             if (dataku.getKeterangan().equals("Teman")) {
-                img.setImageResource(R.drawable.crud__api_laugh);
+                img.setImageResource(R.drawable.crud_api__laugh);
             } else if(dataku.getKeterangan().equals("Biasa Saja")) {
-                img.setImageResource(R.drawable.crud__api_celtic);
+                img.setImageResource(R.drawable.crud_api__celtic);
             } else if (dataku.getKeterangan().equals("Bagaimana Ya?")) {
-                img.setImageResource(R.drawable.crud__api_confusion);
+                img.setImageResource(R.drawable.crud_api__confusion);
             } else {
-                img.setImageResource(R.drawable.crud__api_confused);
+                img.setImageResource(R.drawable.crud_api__confused);
             }
             //attaching click listener to update
             textViewUpdate.setOnClickListener(new View.OnClickListener() {
