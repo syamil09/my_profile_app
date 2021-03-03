@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.tugaspb.MainActivity;
 import com.example.tugaspb.ProfileActivity;
 import com.example.tugaspb.R;
 
@@ -60,7 +61,7 @@ public class CalculatorActivity extends AppCompatActivity {
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(CalculatorActivity.this, ProfileActivity.class);
+                Intent i = new Intent(CalculatorActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });

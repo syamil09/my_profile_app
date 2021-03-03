@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.tugaspb.MainActivity;
 import com.example.tugaspb.ProfileActivity;
 import com.example.tugaspb.R;
 
@@ -39,7 +40,7 @@ public class ResultQuizActivity extends AppCompatActivity {
         btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultQuizActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(ResultQuizActivity.this, MainActivity.class);
                 // ResultQuizActivity.this.finish();
                 startActivity(intent);
 

@@ -21,14 +21,14 @@
             android:name=".quiz.QuizActivity"
             android:noHistory="true" />
         <activity android:name=".ProfileActivity">
+
+        </activity>
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity" >
-
         </activity>
         <activity android:name=".OnboardActivity" />
         <activity
@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".crudapi.CrudApi_MainActivity"
-            android:parentActivityName=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
             android:label="CRUD API"
             android:theme="@style/AppTheme2">
 
@@ -49,7 +49,7 @@
             android:label="CRUD SQLite - Add Data"
             android:theme="@style/AppTheme2"/>
         <activity android:name=".crudsqlite.CrudSqlite_MainActivity"
-            android:parentActivityName=".ProfileActivity"
+            android:parentActivityName=".MainActivity"
             android:label="CRUD SQLite"
             android:theme="@style/AppTheme2"
             />

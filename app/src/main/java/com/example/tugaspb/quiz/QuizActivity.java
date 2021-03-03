@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tugaspb.MainActivity;
 import com.example.tugaspb.ProfileActivity;
 import com.example.tugaspb.R;
 
@@ -44,7 +45,7 @@ public class QuizActivity extends AppCompatActivity {
         btnOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QuizActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(QuizActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.tugaspb.calculator.CalculatorActivity;
 import com.example.tugaspb.crudapi.CrudApi_MainActivity;
@@ -17,17 +18,18 @@ import com.example.tugaspb.quiz.LoginActivity;
 public class ProfileActivity extends AppCompatActivity {
 
     private Button btnClose, btnQuiz, btnCalculator, btnCrudApi, btnCrudSqlite;
+    private ImageView imgBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        imgBack = findViewById(R.id.img_back);
         btnClose = (Button) findViewById(R.id.btn_close);
         btnQuiz = (Button) findViewById(R.id.btn_quiz);
         btnCalculator = (Button) findViewById(R.id.btn_calculator);
-        btnCrudApi = findViewById(R.id.btn_crud_api);
-        btnCrudSqlite = findViewById(R.id.btn_crud_sqlite);
+
 
         btnClose.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -35,6 +37,12 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            }
+        });
         btnQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,18 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(new Intent(ProfileActivity.this, CalculatorActivity.class));
             }
         });
-        btnCrudApi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this, CrudApi_MainActivity.class));
-            }
-        });
-        btnCrudSqlite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this, CrudSqlite_MainActivity.class));
-            }
-        });
+
     }
 
     public void closeApp(View view) {
