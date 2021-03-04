@@ -11,6 +11,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -171,10 +172,36 @@ public class CrudSqlite_DisplayContact extends AppCompatActivity {
 
     private byte[] imageViewToByte(ImageView image) {
         Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();
+        Bitmap compBitmap = resizeImage(bitmap, 100);
+//        Bitmap compBitmap = reduceBitmapSize(bitmap, 307200);
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        compBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();
         return byteArray;
+    }
+
+    public Bitmap resizeImage(Bitmap bmp, int newHeight) {
+        float width = bmp.getWidth();
+        float height = bmp.getHeight();
+        float scale = width/height;
+        float newWidth = newHeight * scale;
+
+        return Bitmap.createScaledBitmap(bmp, (int)newWidth, newHeight, false);
+    }
+
+    public static Bitmap reduceBitmapSize(Bitmap bitmap,int MAX_SIZE) {
+        double ratioSquare;
+        int bitmapHeight, bitmapWidth;
+        bitmapHeight = bitmap.getHeight();
+        bitmapWidth = bitmap.getWidth();
+        ratioSquare = (bitmapHeight * bitmapWidth) / MAX_SIZE;
+        if (ratioSquare <= 1)
+            return bitmap;
+        double ratio = Math.sqrt(ratioSquare);
+        Log.d("mylog", "Ratio: " + ratio);
+        int requiredHeight = (int) Math.round(bitmapHeight / ratio);
+        int requiredWidth = (int) Math.round(bitmapWidth / ratio);
+        return Bitmap.createScaledBitmap(bitmap, requiredWidth, requiredHeight, true);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -236,6 +263,12 @@ public class CrudSqlite_DisplayContact extends AppCompatActivity {
 
     public void run(View view) {
         Bundle extras = getIntent().getExtras();
+        //validating the inputs
+        if (TextUtils.isEmpty(name.getText().toString())) {
+            name.setError("Masukkan Nama");
+            name.requestFocus();
+            return;
+        }
         if(extras !=null) {
             int Value = extras.getInt("id");
             if (Value > 0) {

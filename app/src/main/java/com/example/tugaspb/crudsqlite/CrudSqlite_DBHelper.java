@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class CrudSqlite_DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "contacts";
+    public static final String DATABASE_NAME = "mydb";
     public static final String CONTACTS_TABLE_NAME = "contacts";
     public static final String CONTACTS_COLUMN_ID = "id";
     public static final String CONTACTS_COLUMN_NAME = "name";
@@ -69,7 +69,8 @@ public class CrudSqlite_DBHelper extends SQLiteOpenHelper {
 //            }
 //        }
         contentValues.put("image", img);
-        db.insert("contacts", null, contentValues);
+        Log.d("insert", name);
+        db.insert(CONTACTS_TABLE_NAME, null, contentValues);
 
         return true;
     }
